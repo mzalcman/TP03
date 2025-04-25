@@ -2,10 +2,12 @@ namespace TРОЗ.Models;
 
 public class Disco
 {
+    public string titulo { get; private set; }
+
     public string artista { get; private set; }
     public string productor { get; private set; }
     public string genero { get; private set; }
-
+    public DateTime FechaLanzamiento { get; private set; }
     public List<Temas> temas { get; private set; }
     public int id { get; private set; }
     public string foto { get; private set; }
