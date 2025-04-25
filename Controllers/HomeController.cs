@@ -15,6 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        GestorDiscos.InicializarDiscos();
+        ViewBag.DiccionarioDiscos = GestorDiscos.Discos;
         return View();
     }
 }
