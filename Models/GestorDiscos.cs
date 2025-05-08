@@ -6,7 +6,7 @@ public class GestorDiscos
 
     public static void InicializarDiscos()
     {
-
+    Disco disco1 = new Disco();    
 
 
 
