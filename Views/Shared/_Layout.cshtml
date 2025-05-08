@@ -4,13 +4,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - NombreProyecto</title>
+    <title>@ViewData["Title"] - TP03 - Eliel, More y Mica</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 
 <body>
     <header>
-        NombreProyecto
+        <nav>
+            <ul>
+                <li><a href='@Url.Action("Index", "Home")'>Vuelve a la Home de Music Store</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main role="main">
@@ -18,7 +22,7 @@
     </main>
 
     <footer>
-        &copy; @DateTime.Now.Year - NombreProyecto
+        &copy; @DateTime.Now.Year - Music Store | Eliel, More y Mica
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
