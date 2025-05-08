@@ -15,6 +15,19 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        GestorDiscos.InicializarDiscos();
+        ViewBag.DiccionarioDiscos = GestorDiscos.Discos;
         return View();
+    }
+
+    public IActionResult SelectDisco(int Id)
+    {
+        Dictionary<int, Disco> diccionarioDisco = GestorDiscos.Discos;
+        if(diccionarioDisco.ContainsKey(Id))
+        {
+            ViewBag.infoDatosDiscoBuscado = diccionarioDisco[Id];
+            ViewBag.ID = Id;
+        }
+        return View("infoDatosDiscoBuscado","Id");
     }
 }
