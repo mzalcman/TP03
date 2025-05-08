@@ -6,12 +6,14 @@ public class GestorDiscos
 
     public static void InicializarDiscos()
     {
-    Disco disco1 = new Disco();    
-
+    agregarDisco();
+//Hacer que recorra el diccionarioa compararndo con el nombre (que no sea con el contains key) y si termina y no hay igualdad lo agregue
 
 
     }
+    public static void agregarDisco(){
 
+    }
     private static void CargarDiscos()
     {
         Discos = new Dictionary<int, Disco>();
