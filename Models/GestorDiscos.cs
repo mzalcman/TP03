@@ -8,7 +8,7 @@ public class GestorDiscos
     {
         Discos = new Dictionary<int, Disco>();
         
-        
+    
     }
 
 
