@@ -6,13 +6,10 @@ public class GestorDiscos
 
     public static void InicializarDiscos()
     {
-<<<<<<< HEAD
 
 
-=======
-        
-    
->>>>>>> a22ce03e765024eb8803af032c6b8b0e2cbabb74
+
+
     }
 
     private static void CargarDiscos()
