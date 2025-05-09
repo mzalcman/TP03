@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TРОЗ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3f0d18635172429c0216e23dbbdb0609966993c")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e554244deabd0d8956ce0394f093562f3d5fa263")]
+>>>>>>> 576ee90b3c399caa567783c19955feda4daf024a
 [assembly: System.Reflection.AssemblyProductAttribute("TРОЗ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TРОЗ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
