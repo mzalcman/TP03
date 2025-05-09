@@ -103,7 +103,7 @@ public class GestorDiscos
         temasDelDisco3.Add(temas3cancion9);
         temasDelDisco3.Add(temas3cancion10);
         DateTime fechaLD3 = new DateTime(2024,02,10);
-        agregarDisco("Vultures 1", "Kanye West", "Ty Dolla $ign", "Hip-Hop", temasDelDisco3, 2, "Kanye.jpeg", fechaLD3);
+        agregarDisco("Vultures 1", "Kanye West", "Ty Dolla $ign", "Hip-Hop", temasDelDisco3, 2, "Kanye.png", fechaLD3);
 
 
         List<Temas> temasDelDisco4 = new List<Temas>();

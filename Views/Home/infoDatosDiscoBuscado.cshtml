@@ -3,16 +3,16 @@
 }             
              
              
-                <h2>@ViewBag.infoDatosDiscoBuscado.titulo</h2>
+                <h1>@ViewBag.infoDatosDiscoBuscado.titulo</h1>
                 <h5>Artista: @ViewBag.infoDatosDiscoBuscado.artista</h5>
                 <h5>Productor: @ViewBag.infoDatosDiscoBuscado.productor</h5>
                 <h5>Género: @ViewBag.infoDatosDiscoBuscado.genero</h5>
-                <img src="/Imagenes/@ViewBag.infoDatosDiscoBuscado.foto">
+                <img src="/Imagenes/@ViewBag.infoDatosDiscoBuscado.foto" id="fotoDiscoEspecifico">
 
         @foreach(Temas tema in ViewBag.infoDatosDiscoBuscado.temas)
          {
-            <div>
-            <a href="@tema.video"><h4>@tema.nombre</h4></a>
+            <div class="temasBotones">
+            <a href="@tema.video">@tema.nombre</a>
             </div>
          }
 
