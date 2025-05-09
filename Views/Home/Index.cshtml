@@ -8,8 +8,7 @@
     <img id="FotoLogoSpotify" src="https://cdn.prod.website-files.com/630e13ca92151d578bc2ed8b/65d8d0ab27b5206d441e7517_Large%20(Hero)%20(18).png" alt="Imagen Logo Spotify">
 
     <h2>Nuestros Discos: </h2>
-
-    <!-- Aca hay que usar las viewbags para mostrar los datos de los discos.
+     <!-- Aca hay que usar las viewbags para mostrar los datos de los discos.
          Después hay que hacer una view más que va a ser cada disco en particular, pasandole la clave del diccionario.
          No borres el comentario-->
     
@@ -23,15 +22,14 @@
          @foreach(int id in ViewBag.DiccionarioDiscos.Keys)
          {
             <div>
-                <img scr="~/imagenes/@(ViewBag.DiccionarioDiscos[id].artista).jpeg">
-                <h2>Artista: + @ViewBag.DiccionarioDiscos[id].artista</h2>
-                <h5>ViewBag.DiccionarioDiscos[id].artista</h5>
-                <h5></h5>
-                <h5></h5>
-                <h5></h5>
+                <img scr="wwwroot\Imagenes\@ViewBag.DiccionarioDiscos[id].foto">
+                <h2>@ViewBag.DiccionarioDiscos[id].titulo</h2>
+                <h5>Artista: @ViewBag.DiccionarioDiscos[id].artista</h5>
+                <h5>Productor: @ViewBag.DiccionarioDiscos[id].productor</h5>
+                <h5>Género: @ViewBag.DiccionarioDiscos[id].genero</h5>
+                <a href='@Url.Action("SelectDisco", "infoDatosDiscoBuscado[id]")' >Mostrar disco</a>
             </div>
 
          }
-
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eH8t7ZQQaNg?si=DCPMubJvsazUXFyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
