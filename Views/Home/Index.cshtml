@@ -22,12 +22,12 @@
          @foreach(int id in ViewBag.DiccionarioDiscos.Keys)
          {
             <div class="cajas">
-                <img scr="wwwroot\Imagenes\@ViewBag.DiccionarioDiscos[id].foto">
+                <img src=".\Imagenes\@ViewBag.DiccionarioDiscos[id].foto">
                 <h2>@ViewBag.DiccionarioDiscos[id].titulo</h2>
                 <h5>Artista: @ViewBag.DiccionarioDiscos[id].artista</h5>
                 <h5>Productor: @ViewBag.DiccionarioDiscos[id].productor</h5>
                 <h5>Género: @ViewBag.DiccionarioDiscos[id].genero</h5>
-                <a href='@Url.Action("SelectDisco", "infoDatosDiscoBuscado[id]")' >Mostrar disco</a>
+                <a href='@Url.Action("SelectDisco", "Home", new {id = ViewBag.DiccionarioDiscos[id].id})' >Mostrar disco</a>
             </div>
 
          }
