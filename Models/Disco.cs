@@ -3,7 +3,6 @@ namespace TРОЗ.Models;
 public class Disco
 {
     public string titulo { get; private set; }
-
     public string artista { get; private set; }
     public string productor { get; private set; }
     public string genero { get; private set; }
@@ -12,8 +11,9 @@ public class Disco
     public int id { get; private set; }
     public string foto { get; private set; }
 
-    public Disco(string artista, string productor, string genero, List <Temas> temas, int id, string foto, DateTime fechaLanzamiento)
+    public Disco(string titulo, string artista, string productor, string genero, List <Temas> temas, int id, string foto, DateTime fechaLanzamiento)
     {
+        this.titulo = titulo;
         this.artista = artista; 
         this.productor = productor;
         this.genero = genero;
