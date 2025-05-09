@@ -14,9 +14,17 @@ public class GestorDiscos
     }
     private static void agregarDisco(string titulo, string artista, string productor, string genero, List <Temas> temas, int id, string foto, DateTime fechaLanzamiento)
     {
+        bool puedoAgregarlo = true;
         foreach(int clave in Discos.Keys)
         {
-            if(Discos[clave].titulo == ""){};
+            if(titulo == Discos[clave].titulo)
+            {
+                puedoAgregarlo = false;
+            }
+        }
+        if(puedoAgregarlo)
+        {
+
         }
     }
     private static void CargarDiscos()
