@@ -20,14 +20,14 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult SelectDisco(int Id)
+    public IActionResult SelectDisco(int id)
     {
         Dictionary<int, Disco> diccionarioDisco = GestorDiscos.Discos;
-        if(diccionarioDisco.ContainsKey(Id))
+        if(diccionarioDisco.ContainsKey(id))
         {
-            ViewBag.infoDatosDiscoBuscado = diccionarioDisco[Id];
-            ViewBag.ID = Id;
+            ViewBag.infoDatosDiscoBuscado = diccionarioDisco[id];
+            ViewBag.ID = id;
         }
-        return View("infoDatosDiscoBuscado","Id");
+        return View("infoDatosDiscoBuscado","id");
     }
 }
