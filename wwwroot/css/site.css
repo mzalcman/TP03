@@ -12,17 +12,65 @@ html {
 body {
   margin: 10px;
   padding: 10px;
+  background-color: #5e5e5e;
 }
 
+header{
+  width: 100%;
+  display: inline-block;
+}
 
 footer {
   margin-top: 10px;
   padding: 10px;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e9ecef;
+  color: yellow;
+  background-color: #000000;
+  border-top: 1px solid yellow;
 }
 
 #FotoLogoSpotify{
   width: 25%;
   height: auto;
+  padding-left: 37%;
+  padding-right: 37%;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: yellow;
+}
+
+nav ul li{
+    list-style: none;
+    float: left;
+    margin-left: 1%;
+    padding: 0.5%;
+    border: 1px solid yellow;
+    border-radius: 5px 5px 5px 10px;
+    background-color: #000000;
+    box-shadow: 2px 5px 10px #76773c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: bold;
+    font-size: 2em;
+}
+
+h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  font-style: bold;
+  font-size: 5em;
+  text-shadow: -2px 5px 5px rgb(56, 56, 56);
+  /*background-color: yellow;
+  border: 1px solid black;*/
+}
+
+h5{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  font-style: bold;
+  font-size: 1.5em;
+  text-shadow: -2px 5px 5px rgb(56, 56, 56);
+  /*background-color: yellow;
+  border: 1px solid black;*/
 }
