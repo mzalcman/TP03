@@ -11,6 +11,26 @@
     <!-- Aca hay que usar las viewbags para mostrar los datos de los discos.
          Después hay que hacer una view más que va a ser cada disco en particular, pasandole la clave del diccionario.
          No borres el comentario-->
+    
+        <!--ViewBag.DiccionarioDiscos
+        this.artista = artista; 
+        this.productor = productor;
+        this.genero = genero;
+        this.temas = temas;
+        this.id = id;
+        this.foto = foto;-->
+         @foreach(int id in ViewBag.DiccionarioDiscos.Keys)
+         {
+            <div>
+                <img scr="~/imagenes/@(ViewBag.DiccionarioDiscos[id].artista).jpeg">
+                <h2>Artista: + @ViewBag.DiccionarioDiscos[id].artista</h2>
+                <h5>ViewBag.DiccionarioDiscos[id].artista</h5>
+                <h5></h5>
+                <h5></h5>
+                <h5></h5>
+            </div>
+
+         }
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eH8t7ZQQaNg?si=DCPMubJvsazUXFyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
