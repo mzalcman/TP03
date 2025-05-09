@@ -69,6 +69,7 @@ h1{
   font-style: bold;
   font-size: 2em;
   color: rgb(4, 4, 110);
+  text-decoration: none;
 }
 h5{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -162,6 +163,6 @@ div img{
   text-decoration: none;
   text-align: center;
   color: black;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
 }
