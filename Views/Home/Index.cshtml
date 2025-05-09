@@ -8,9 +8,35 @@
     <img id="FotoLogoSpotify" src="https://cdn.prod.website-files.com/630e13ca92151d578bc2ed8b/65d8d0ab27b5206d441e7517_Large%20(Hero)%20(18).png" alt="Imagen Logo Spotify">
 
     <h2>Nuestros Discos: </h2>
+<<<<<<< HEAD
     <!-- Aca hay que usar las viewbags para mostrar los datos de los discos. 
     Después hay que hacer una view más, aparte del index, que va a ser para cada disco en particular, pasandole la clave del diccionario para que sepa que mostrar.
     No borres el comentario, así vamos viendo lo que hacemos-->
+=======
+    <!-- Aca hay que usar las viewbags para mostrar los datos de los discos.
+         Después hay que hacer una view más que va a ser cada disco en particular, pasandole la clave del diccionario.
+         No borres el comentario-->
+    
+        <!--ViewBag.DiccionarioDiscos
+        this.artista = artista; 
+        this.productor = productor;
+        this.genero = genero;
+        this.temas = temas;
+        this.id = id;
+        this.foto = foto;-->
+         @foreach(int id in ViewBag.DiccionarioDiscos.Keys)
+         {
+            <div>
+                <img scr="~/imagenes/@(ViewBag.DiccionarioDiscos[id].artista).jpeg">
+                <h2>Artista: + @ViewBag.DiccionarioDiscos[id].artista</h2>
+                <h5>ViewBag.DiccionarioDiscos[id].artista</h5>
+                <h5></h5>
+                <h5></h5>
+                <h5></h5>
+            </div>
+
+         }
+>>>>>>> 3f59529ba83d6837b959e3aacb5063c7a3377261
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/eH8t7ZQQaNg?si=DCPMubJvsazUXFyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
