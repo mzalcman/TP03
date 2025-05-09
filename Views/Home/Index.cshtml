@@ -21,7 +21,7 @@
         this.foto = foto;-->
          @foreach(int id in ViewBag.DiccionarioDiscos.Keys)
          {
-            <div>
+            <div class="cajas">
                 <img scr="wwwroot\Imagenes\@ViewBag.DiccionarioDiscos[id].foto">
                 <h2>@ViewBag.DiccionarioDiscos[id].titulo</h2>
                 <h5>Artista: @ViewBag.DiccionarioDiscos[id].artista</h5>

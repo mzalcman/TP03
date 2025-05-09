@@ -22,9 +22,11 @@ public class GestorDiscos
                 puedoAgregarlo = false;
             }
         }
+
         if(puedoAgregarlo)
         {
-
+            Disco nuevoDisco = new Disco(titulo, artista, productor, genero, temas, id, foto, fechaLanzamiento);
+            Discos.Add(id, nuevoDisco);
         }
     }
     private static void CargarDiscos()
